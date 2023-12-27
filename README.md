@@ -6,6 +6,8 @@ Thanks to the `quill.js` team, they did good work.
 ## How to use
 just open the `writer.html` in your browser and use it. Once done your writing or notes, just press `Save to html file` button. The `Clear` button is to clear all stuff for you to rewrite everything again.
 
+![Screenshot from 2023-12-27 09-16-47](https://github.com/devster-th/writer/assets/62985632/aba6f717-f539-44ef-9d24-0b148392870c)
+
 Happy writing :-D
 
 ## Additional note
