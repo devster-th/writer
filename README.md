@@ -7,3 +7,6 @@ Thanks to the `quill.js` team, they did good work.
 just open the `writer.html` in your browser and use it. Once done your writing or notes, just press `Save to html file` button. The `Clear` button is to clear all stuff for you to rewrite everything again.
 
 Happy writing :-D
+
+## Additional note
+The picture can be dragged into the writing box. Very easy, I like this very much :-)
