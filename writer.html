@@ -9,7 +9,9 @@ img {width:100%}
 <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
 <!-- Include the Quill library -->
 <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+<!--
 <script src="/home/sunsern/xserver/website/xbrowser/module/xdev/xdev_b.js"></script>
+-->
 </head>
 <body>
 <h3>Writer 0.1</h3>
@@ -49,13 +51,31 @@ img {width:100%}
 
 
   function writerSave() {
-    xb.saveTextFile(
+    saveTextFile(
       '<!DOCTYPE html><html><head><style>img {width:100%}</style></head><body>' +
       document.querySelector('.ql-editor').innerHTML +
       '</body><!-- this doc gen by Writer 0.1 --></html>',
       Date.now() + '.html'
     )
   }
+
+  const saveTextFile = function (text, fileName) {
+  // save text to fileName
+
+  if (!text) return {msg:"Wrong input.", success:false} 
+  if (!fileName) fileName = Date.now() + '.txt'
+  //if (!fileName.match(/\w+.txt$/)) fileName = fileName + '.txt'
+  
+  let link = document.createElement('a')
+  link.download = fileName
+  let blob = new Blob([text],{type:'text/plain'})
+  link.href = URL.createObjectURL(blob)
+  link.click()
+  URL.revokeObjectURL(link.href)
+  /* note
+  tested OK, m20230904
+  */
+}
 </script>
 </body>
 </html>
