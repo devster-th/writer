@@ -12,3 +12,6 @@ Happy writing :-D
 
 ## Additional note
 The picture can be dragged into the writing box. Very easy, I like this very much :-)
+
+## Log
+Now removed the dependence with `xdev_b.js` already so you just use the file `writer.html` and everything is done, working.
